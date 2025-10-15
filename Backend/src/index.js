@@ -18,7 +18,7 @@ app.use(globalErrorHandler);
         await connectDB();
 
         // server running...
-        app.listen(process.env.PORT || 8000, () => {
+        app.listen(process.env.PORT || 8000, '0.0.0.0', () => {
             console.log(` Server running on PORT ${process.env.PORT || 8000}`);
         });
     } catch (error) {
