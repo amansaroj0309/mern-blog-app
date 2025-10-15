@@ -17,7 +17,8 @@ const corsOptions = {
         const allowedOrigins = [
             process.env.FRONTEND_LINK,
             'http://localhost:5173',
-            'http://localhost:3000'
+            'http://localhost:3000',
+            'http://15.207.22.145'
         ];
         
         if (allowedOrigins.includes(origin)) {
